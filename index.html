@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Apps Number </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ticker-container">
+    <div class="ticker">
+      <div class="ticker-item">📱 Amazon: 12,453 numbers available</div>
+      <div class="ticker-item">📱 Paytm: 10,245 numbers available</div>
+      <div class="ticker-item">📱 Whatsapp: 8,765 numbers available</div>
+      <div class="ticker-item">📱 Google: 7,432 numbers available</div>
+      <div class="ticker-item">📱 Instagram: 6,543 numbers available</div>
+      <div class="ticker-item">📱 Microsoft: 5,432 numbers available</div>
+      <div class="ticker-item">📱 Facebook: 4,321 numbers available</div>
+      <div class="ticker-item">📱 Loan App: 3,210 numbers available</div>
+      <div class="ticker-item">📱 Gaming App: 2,109 numbers available</div>
+    </div>
+  </div>
+
+  <div class="login-container" id="loginContainer">
+    <h2>Welcome to Virtual OTP</h2>
+    <div class="login-form">
+      <input type="text" id="userId" placeholder="User ID" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button id="signInBtn">Sign In</button>
+      <button id="buyCredentialsBtn" onclick="window.location.href='https://rzp.io/rzp/279OgQcX'">Buy ID Password</button>
+      <p id="loginMessage"></p>
+    </div>
+  </div>
+
+  <div class="container" id="mainContainer" style="display: none;">
+    <div class="security-badge">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Secure OTP" class="secure-icon">
+      <span>Secure OTP Verification</span>
+    </div>
+    <h1>📱 Virtual Mobile Number </h1>
+
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle" />
+        <span class="slider"></span>
+      </label>
+      <span>Dark Mode</span>
+      <button id="loginBtn">Login</button>
+    </div>
+
+    <div class="input-group">
+      <select id="countryDropdown">
+        <option value="IN">🇮🇳 India (₹10-₹30)</option>
+        <option value="US">🇺🇸 USA ($10-$30)</option>
+        <option value="UK">🇬🇧 UK (£10-£30)</option>
+        <option value="DE">🇩🇪 Germany (€10-€30)</option>
+        <option value="CA">🇨🇦 Canada ($10-$30)</option>
+      </select>
+
+      <select id="appDropdown">
+        <option value="Amazon" data-price="10">Amazon (₹10)</option>
+        <option value="Paytm" data-price="12">Paytm (₹12)</option>
+        <option value="Whatsapp" data-price="15">Whatsapp (₹15)</option>
+        <option value="Google" data-price="24">Google (₹24)</option>
+        <option value="Instagram" data-price="29">Instagram (₹29)</option>
+        <option value="Microsoft" data-price="15">Microsoft (₹15)</option>
+        <option value="Facebook" data-price="12">Facebook (₹12)</option>
+        <option value="Loan App" data-price="24">Loan App (₹24)</option>
+        <option value="Gaming App" data-price="29">Gaming App (₹29)</option>
+      </select>
+
+      <button id="getNumberBtn">Get Mobile Number</button>
+    </div>
+
+    <div class="price-info">
+      <p>💰 Country Price Range: <span id="priceRange">₹10 - ₹30</span></p>
+      <p>📱 App Price: <span id="appPrice">₹10</span></p>
+      <p>💵 Your Balance: <span id="userBalance">₹0</span></p>
+    </div>
+
+    <div class="number-display" id="phoneNumber">Please select country and click "Get Mobile Number"</div>
+
+    <div class="wallet-section">
+      <h3>💰 Wallet Balance: ₹100</h3>
+      <button id="addMoneyBtn" onclick="window.location.href='https://rzp.io/rzp/279OgQcX'">Add Money (Min. ₹100)</button>
+    </div>
+
+    <div class="otp-actions">
+      <button id="copyOtpBtn" disabled>📋 Copy OTP</button>
+    </div>
+
+    <p id="timerDisplay">⏳ Time Remaining: 2:00</p>
+    <p id="otpMessage">Waiting for OTP...</p>
+
+    <div class="customer-support">
+      <p>📧 Customer Support: criccorex@gmail.com</p>
+    </div>
+
+    <div class="loading-spinner" style="display: none;">
+      <div class="spinner"></div>
+      <p>Generating number...</p>
+    </div>
+
+    <div class="recent-numbers">
+      <h3>Recent Numbers</h3>
+      <ul id="recentNumbersList"></ul>
+    </div>
+
+    <div class="quick-select">
+        <h3>Quick Select</h3>
+        <div class="quick-select-buttons">
+            <button class="quick-app" data-app="Whatsapp">Whatsapp</button>
+            <button class="quick-app" data-app="Amazon">Amazon</button>
+            <button class="quick-app" data-app="Google">Google</button>
+        </div>
+    </div>
+
+    <div class="timer-progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <button id="saveNumberBtn">💾 Save Number</button>
+    <div id="savedNumbers">
+        <h3>Saved Numbers</h3>
+        <ul id="savedNumbersList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
