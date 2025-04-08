@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Buy Credentials button click handler
     document.getElementById('buyCredentialsBtn').addEventListener('click', function() {
       const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      const paymentLink = 'https://razorpay.me/@criccorex';
+      const paymentLink = 'https://rzp.io/rzp/279OgQcX';
       
       if (isMobile) {
         // For mobile devices, try to open in the same window first
