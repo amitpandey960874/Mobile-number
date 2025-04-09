@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Buy Credentials button click handler
     document.getElementById('buyCredentialsBtn').addEventListener('click', function() {
       const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      const paymentLink = 'https://rzp.io/rzp/279OgQcX';
+      const paymentLink = 'https://rzp.io/rzp/criccorex';
       
       if (isMobile) {
         // For mobile devices, try to open in the same window first
@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Add money button click handler
     document.getElementById('addMoneyBtn').addEventListener('click', function() {
       // Open Razorpay payment link
-      window.open('https://rzp.io/rzp/ATFtpasA', '_blank');
+      window.open('https://rzp.io/rzp/criccorex', '_blank');
       
       // After successful payment, update balance
       // Note: In a real implementation, you would verify the payment on your server
